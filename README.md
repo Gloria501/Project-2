@@ -11,19 +11,19 @@ Features
 
 --Normalizes:
 
-  *Full Name = First + Last Name
+  * Full Name = First + Last Name
 
-  *Designation by experience
+  * Designation by experience
 
-  *Invalid phone numbers ('x' marked as "Invalid Number")
+  * Invalid phone numbers ('x' marked as "Invalid Number")
 
- *Hire Date to YYYY-MM-DD
+ * Hire Date to YYYY-MM-DD
 
- *Ensures correct data types for all fields
+ * Ensures correct data types for all fields
 
- *Error handling with retries
+ * Error handling with retries
  
- *(Optional) Salary currency conversion
+ * (Optional) Salary currency conversion
  
 
   **Test Cases**
