@@ -24,11 +24,11 @@ def normalize_data(employees):
 
     df['designation'] = df['years_of_experience'].apply(get_designation)
 
-    # ✅ Safely handle 'hire_date'
+    # Safely handle 'hire_date'
     if 'hire_date' in df.columns:
         df['hire_date'] = pd.to_datetime(df['hire_date'], errors='coerce').dt.strftime('%Y-%m-%d')
     else:
-        print("⚠️ 'hire_date' field not found in data. Adding 'hire_date' as NaT.")
+        print("'hire_date' field not found in data. Adding 'hire_date' as NaT.")
         df['hire_date'] = pd.NaT
 
     # Convert valid phone numbers to int
