@@ -1,4 +1,5 @@
-**Employee Data Scraper
+**Employee Data Scraper**
+
 This Python script scrapes employee data from the SlingAcademy API, normalizes it, and prepares it for data warehouse ingestion.
 
 Features
