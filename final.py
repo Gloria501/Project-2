@@ -7,7 +7,8 @@ raw_df = fetch_employee_data(url)
 
 if raw_df:
     normalized_df = normalize_data(raw_df)
-    final_df = enforce_data_types(normalized_df)
+    final_df = enforce_data_types(normalized_df, "test_output.csv")
+
     show_data(final_df)
 else:
     print("No employee data to process.")
