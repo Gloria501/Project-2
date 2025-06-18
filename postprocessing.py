@@ -1,14 +1,15 @@
-def test_export_and_read(self):
-        df = normalize_data(self.sample_data)
-        enforce_data_types(df, 'test_output.csv')  
-        read_back = pd.read_csv('test_output.csv')
-        self.assertIn('Full Name', read_back.columns)
+def enforce_data_types(df):
+    df = df.astype({
+        'Full Name': str,
+        'email': str,
+        'gender': str,
+        'age': 'Int64',
+        'job_title': str,
+        'years_of_experience': 'Int64',
+        'salary': 'Int64',
+        'department': str
+    })
+    return df
 
-    def test_validate_data_no_errors(self):
-        df = normalize_data(self.sample_data)
-        errors =  show_data(df)
-        self.assertEqual(errors, [])
-
-
-if _name_ == '_main_':
-    unittest.main()
+def show_data(df):
+    print(df)
